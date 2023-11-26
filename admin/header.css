@@ -1,0 +1,44 @@
+.navbar { 
+    background-color: darkred;
+    overflow: hidden;
+}
+
+.navbar a.title {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .navbar-links {
+    float: right;
+}
+
+.navbar a {
+    display: inline-block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.navbar a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: block; 
+        float: none;
+    }
+    .navbar .navbar-links {
+        float: none;
+        text-align: center; 
+    }
+}
+
+
+

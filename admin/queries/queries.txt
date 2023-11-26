@@ -1,0 +1,81 @@
+admin login
+ALTER TABLE your_table_name
+ADD COLUMN a_id INT AUTO_INCREMENT PRIMARY KEY
+
+
+CREATE TABLE candidatesignup(
+    c_id int(3) PRIMARY KEY AUTO_INCREMENT NOT NUll,
+    c_username varchar(255) NOT Null,
+    password varchar(8) NOT Null,
+    confirmpassword varchar(8) NOT Null  
+)
+CREATE TABLE candidate (
+    	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50) NOT NULL,
+	email varchar(50) NoT NULL,
+    	phone_no varchar(20) not null,
+    	religion varchar(30) Not NUll,
+	occupation varchar(40) not null,
+    	monthly_income int(50) not null,
+	age int(4) not null,
+    	height varchar(30) not null,
+    	gender VARCHAR(20) Not NUll,
+    	marital_status VARCHAR(20) Not NUll,
+    	caste varchar(30) not null,
+	profile_img varchar(50) Not null,
+	city varchar(50) not null,
+    	c_id INT,
+    	FOREIGN KEY (c_id) REFERENCES candidatesignup(c_id)
+);
+ALTER TABLE candidate
+ADD COLUMN city VARCHAR(50) NOT NULL;
+
+
+CREATE TABLE familydetail (
+    f_id INT PRIMARY KEY AUTO_INCREMENT,
+    c_id INT NOT NULL,
+    father_name VARCHAR(255) NOT NULL,
+    mother_name VARCHAR(255) NOT NULL,
+    father_occupation VARCHAR(50) NOT NULL,
+    mother_occupation VARCHAR(50),
+    father_phone VARCHAR(20),
+    siblings INT NOT NULL,
+    married_persons INT NOT NULL,
+    FOREIGN KEY (c_id) REFERENCES candidatesignup (c_id)
+);
+
+CREATE TABLE academics (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    c_id INT NOT NULL,
+    matric_degree VARCHAR(50) Not Null,
+    intermediate_degree VARCHAR(50) Not Null,
+    bachelors_detail TEXT Not Null,
+    masters_detail TEXT Not Null,
+    FOREIGN KEY (c_id) REFERENCES candidate(c_id)
+);
+
+CREATE TABLE house_detail (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    c_id INT NOT NULL,
+    size VARCHAR(50),
+    total_floors INT,
+    house_owner VARCHAR(50),
+    city VARCHAR(50) NOT NULL,
+    location TEXT NOT NULL,
+    FOREIGN KEY (c_id) REFERENCES candidate(c_id)
+);
+CREATE TABLE payment_detail (
+    payment_id INT PRIMARY KEY AUTO_INCREMENT,
+    c_id INT NOT NULL,
+    payment_status VARCHAR(20) NOT NULL,
+    payment_amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (c_id) REFERENCES candidate(c_id)
+);  
+ALTER TABLE payment_detail ADD purchase_date DATETIME
+ALTER TABLE payment_detail ADD expiration_date DATETIME
+ALTER TABLE payment_detail ADD package_name varchar(40) not null
+
+//query to show data which is not equal to paid
+SELECT *
+FROM payment_detail
+WHERE payment_status <> 'paid';

@@ -1,0 +1,24 @@
+.modal{
+	background-color: grey;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+}
+h2{
+	color: darkred;
+}
+p{
+	font-size: 20px;
+}
+.modal-content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 80vh;
+        width: 56%;
+        border-radius: 20px;
+        background-color: #fff;
+}
+

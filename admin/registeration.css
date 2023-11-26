@@ -1,0 +1,261 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+/*  display: flex;*/
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative;
+  flex: 1 1 50%;
+  height: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  height: 500px;
+  filter: brightness(50%);
+}
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered-content button{
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+  width: 150px;
+  border-radius: 5px;
+}
+.centered-content button a{
+  text-decoration: none;
+  color: white;
+}
+
+.centered-content button:hover{
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid white;
+}
+
+h1, h2, p{
+  color: white;
+}
+.form-container {
+  background-color: white;
+  padding: 20px;
+
+}
+form h2{
+  text-align: center;
+  color: darkred;
+  border-bottom: 2px solid darkred;
+}
+fieldset{
+  color: darkred;
+  font-size: ;
+}
+.peronal_detail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.peronal_detail div{
+  display: flex;
+  flex-direction: column;
+}
+.peronal_detail div label{
+  font-weight: bold;
+}
+.peronal_detail div span{
+  color: red;
+}
+.peronal_detail div input{
+  width: 18rem;
+  margin-bottom: 1rem;
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid darkred;
+  border-radius: 5px;
+}
+.peronal_detail div select{
+  width: 19rem;
+  margin-bottom: 1rem;
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid darkred;
+  border-radius: 5px;
+}
+.peronal_detail div textarea{
+  width: 60rem;
+  margin-bottom: 1rem;
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid darkred;
+  border-radius: 5px;
+}
+form button{
+  width: 100%;
+  background-color: darkred;
+  border-radius: 5px;
+  font-size: 15px;
+}
+form button a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+form button:hover{
+  background-color: #9c0c0c;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}   
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .peronal_detail div input{
+    width: 100%;
+  }
+
+  .image-container {
+    order: 2;
+  }
+
+  .form-container {
+    order: 1;
+  }
+}
+
+@media (max-width: 997px) {
+  .peronal_detail div textarea{
+    width: 100%;
+  } 
+}
+@media (max-width: 409px) {
+  .peronal_detail div{
+    width: 100%;
+  }
+  .peronal_detail div input{
+    width: 95%;
+  }
+  .peronal_detail div textarea{
+    width: 95%;
+  } 
+  .peronal_detail div select{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+review .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.review .box-container .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.review .box-container .box:hover{
+    box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.4);
+}
+
+.review .box-container .box .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.review .box-container .box .user .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.review .box-container .box .fa-quote-right{
+    margin-left: auto;
+    font-size: 5rem;
+    color:var(--bg);
+}
+
+.review .box-container .box p{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-style: italic;
+    text-align: justify;
+}
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    
+    .home .content{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

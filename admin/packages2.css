@@ -1,0 +1,86 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    margin: 0;
+}
+.myDiv{
+    background-color: darkred;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+
+   }
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+
+   }
+.myDiv h2{
+    text-align: center;
+
+}
+
+.myDiv2 button:disabled  {
+    background-color: #ccc; /* Change this to your desired color */
+    color: #999; /* Change this to your desired color */
+    cursor: not-allowed; /* Change cursor style for better UX */
+}
+
+.myDiv p {
+    text-align: center;
+}
+
+.myDiv2{
+    background-color: white;
+    text-align: center;
+    width: 20rem;
+    padding: 10px;
+/*    height: 40rem;*/
+  margin: 10px;
+
+
+
+}
+.myDiv2:hover{
+     box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.4);
+}
+h3{
+    background-color: darkred;
+    color: white;
+    font-weight: 300;
+    padding: 12px;
+}
+h1{
+    color: darkred;
+}
+ul{
+    list-style-type: none;
+    color: slategray;
+}
+#pid{
+    color: grey;
+    text-align: justify;
+}
+button{
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    font-weight: 100;
+    width: 100%;
+    border: none;
+}
+button:hover{
+    background-color: white;
+    border:  1px solid darkred;
+    color: darkred;
+}
+
+
+/*.myDiv3 {
+    background-color: white;
+    text-align: center;
+    width: 30%;
+}*/

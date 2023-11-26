@@ -1,0 +1,75 @@
+/* Style for the footer container */
+.footer {
+    margin-top: 200px;
+    background-color: darkred;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h2{
+    color: white;
+    text-align: left;
+}
+
+/* Style for the footer sections */
+.footer-section {
+    padding: 20px;
+    flex: 1;
+    max-width: 30%;
+/*    border-right: 1px solid red;*/
+}
+
+/* Style for the links in the footer */
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Style for the social media icons */
+.social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Style for the contact form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Style for the footer bottom */
+.footer-bottom {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

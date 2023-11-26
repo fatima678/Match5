@@ -1,0 +1,49 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile-details{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    padding: 10px;
+}
+
+.profile-image{
+    width: 400px;
+	padding: 20px;
+	border-right: 2px solid lightgrey;	
+}
+img{
+    width: 100%;
+	border-radius: 10px;
+}
+.profile-image h2{
+	text-align: center;
+}
+
+.other-detail{
+	display: flex;
+    flex-wrap: wrap;
+}
+.candidate-detail {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically on small screens */
+    padding: 20px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between; /* Spread elements horizontally */
+    align-items: center; /* Vertically center elements */
+    border-bottom: 1px solid darkred;
+}
+
+.detail span {
+    flex: 1; /* Allow the span to grow or shrink as needed */
+    font-weight: bold;
+}
+.education-detail{
+    padding: 20px;
+    flex-direction: column; /* Stack rows vertically on small screens */
+    padding: 20px;
+}

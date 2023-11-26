@@ -1,0 +1,42 @@
+
+.other-detail{
+	display: flex;
+}
+.profile-details{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile-image{
+	padding: 20px;
+	border-right: 2px solid lightgrey;
+	
+}
+img{
+	border-radius: 50%;
+}
+.profile-image h2{
+	text-align: center;
+}
+
+
+.candidate-detail {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically on small screens */
+    padding: 20px;
+    border-right: 1px solid lightgrey;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between; /* Spread elements horizontally */
+    align-items: center; /* Vertically center elements */
+    border-bottom: 1px solid darkred;
+}
+
+.detail span {
+    flex: 1; /* Allow the span to grow or shrink as needed */
+    font-weight: bold;
+    /*padding-right: 10px; *//* Add spacing between label and value */
+}

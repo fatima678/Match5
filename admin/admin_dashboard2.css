@@ -1,0 +1,73 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+body{
+	margin: 0;
+}
+h1{
+	text-align: center;
+	background-color: darkred;
+	color: white;
+	padding: 10px;
+}
+form{
+	padding: 15px;
+}
+button {
+	width: 100%;
+	padding: 10px;
+}
+
+.sidenav {
+        height: 100%;
+	    width: 250px;
+    	position: fixed;
+        z-index: 1;
+        top: 75px;
+        left: -250px;
+        background-color: #333;
+        padding-top: 20px;
+        transition: 0.3s;
+}
+
+    	.sidenav a {
+/*        	margin-top: 20px;*/
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            border-bottom: 1px solid grey;
+        }
+
+        .sidenav a:hover {
+            background-color: #555;
+        }
+
+        .openbtn {
+            position: fixed;
+            z-index: 2;
+            left: 20px;
+            top: 30px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add this style to move the links to the bottom */
+        .sidenav .bottom-links {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+
+/*Table*/
+.user-table {
+    position: absolute;
+    top: 100px; /* Adjust the top position as needed */
+    left: 300px; /* Adjust the left position to match your sidenav width */
+}
